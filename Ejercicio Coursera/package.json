@@ -1,0 +1,20 @@
+{
+  "name": "ejercicio-coursera-bootstrap",
+  "version": "1.0.0",
+  "description": "Proyecto de Bootstrap 4 - Diseñando páginas web",
+  "main": "index.html",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "keywords": ["bootstrap", "responsive", "web"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.2",
+    "jquery": "^3.6.4",
+    "popper.js": "^1.16.1"
+  }
+}

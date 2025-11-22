@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mi Tienda en Línea - Bootstrap 4</title>
+    
+    <!-- Bootstrap CSS desde CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Jumbotron con título del proyecto -->
+    <div class="jumbotron jumbotron-fluid text-center">
+        <div class="container">
+            <h1 class="display-3">Mi Tienda en Línea</h1>
+            <p class="lead">Descubre los mejores productos con la mejor calidad y precio</p>
+        </div>
+    </div>
+
+    <!-- Container principal -->
+    <div class="container">
+        
+        <!-- Sección de características del producto con 3 párrafos -->
+        <section class="feature-section">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Calidad Premium</h2>
+                    <p>Ofrecemos productos de la más alta calidad, seleccionados cuidadosamente por nuestro equipo de expertos. Cada artículo pasa por rigurosos controles de calidad para garantizar tu satisfacción total.</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Envío Rápido</h2>
+                    <p>Entregas en tiempo récord a cualquier parte del país. Nuestro sistema logístico está optimizado para que recibas tus productos en el menor tiempo posible, con seguimiento en tiempo real.</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Mejor Precio</h2>
+                    <p>Garantizamos los mejores precios del mercado. Si encuentras un precio más bajo, lo igualamos. Además, ofrecemos promociones exclusivas y descuentos para nuestros clientes frecuentes.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Lista de productos usando sistema de grillas con FLEX -->
+        <section class="products-section my-5">
+            <h2 class="text-center mb-4">Nuestros Productos Destacados</h2>
+            
+            <!-- Sistema de grillas con FLEX -->
+            <div class="container">
+                <div class="row d-flex">
+                    
+                    <!-- Producto 1 -->
+                    <div class="col-12 col-md-6 col-lg-4 d-flex">
+                        <div class="product-card flex-fill">
+                            <h3>Laptop Profesional</h3>
+                            <p>Laptop de última generación con procesador Intel i7, 16GB RAM y 512GB SSD. Perfecta para trabajo profesional y diseño gráfico. Incluye Windows 11 Pro y garantía extendida de 2 años.</p>
+                            <button class="btn btn-primary">Comprar Ahora</button>
+                        </div>
+                    </div>
+
+                    <!-- Producto 2 -->
+                    <div class="col-12 col-md-6 col-lg-4 d-flex">
+                        <div class="product-card flex-fill">
+                            <h3>Smartphone Premium</h3>
+                            <p>Teléfono inteligente con cámara de 108MP, pantalla AMOLED de 6.7", 256GB de almacenamiento y batería de 5000mAh. Resistente al agua IP68 y carga rápida de 65W.</p>
+                            <button class="btn btn-success">Comprar Ahora</button>
+                        </div>
+                    </div>
+
+                    <!-- Producto 3 -->
+                    <div class="col-12 col-md-6 col-lg-4 d-flex">
+                        <div class="product-card flex-fill">
+                            <h3>Auriculares Inalámbricos</h3>
+                            <p>Auriculares con cancelación activa de ruido, sonido Hi-Fi, 30 horas de batería y estuche de carga portátil. Compatibles con todos los dispositivos Bluetooth 5.0.</p>
+                            <button class="btn btn-info">Comprar Ahora</button>
+                        </div>
+                    </div>
+
+                    <!-- Producto 4 -->
+                    <div class="col-12 col-md-6 col-lg-4 d-flex">
+                        <div class="product-card flex-fill">
+                            <h3>Tablet Multifuncional</h3>
+                            <p>Tablet de 10.5 pulgadas con pantalla 2K, 8GB RAM y soporte para stylus. Ideal para estudiantes y profesionales creativos. Incluye teclado desmontable y funda protectora.</p>
+                            <button class="btn btn-warning">Comprar Ahora</button>
+                        </div>
+                    </div>
+
+                    <!-- Producto 5 -->
+                    <div class="col-12 col-md-6 col-lg-4 d-flex">
+                        <div class="product-card flex-fill">
+                            <h3>Smartwatch Deportivo</h3>
+                            <p>Reloj inteligente con monitor de frecuencia cardíaca, GPS integrado, resistente al agua 50m y más de 100 modos deportivos. Batería de hasta 14 días de duración.</p>
+                            <button class="btn btn-danger">Comprar Ahora</button>
+                        </div>
+                    </div>
+
+                    <!-- Producto 6 -->
+                    <div class="col-12 col-md-6 col-lg-4 d-flex">
+                        <div class="product-card flex-fill">
+                            <h3>Cámara Digital 4K</h3>
+                            <p>Cámara profesional con sensor de 24MP, grabación 4K a 60fps, estabilización de imagen y lente intercambiable. Perfecta para fotografía y videografía profesional.</p>
+                            <button class="btn btn-dark">Comprar Ahora</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer con información del comercio -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                
+                <!-- Columna izquierda: Información del comercio -->
+                <div class="col-md-4 text-left">
+                    <h5>Sobre Nosotros</h5>
+                    <p>Somos una tienda en línea dedicada a ofrecer los mejores productos de tecnología con la mejor calidad y servicio al cliente.</p>
+                    <!-- Dirección usando componente address -->
+                    <address>
+                        <strong>Mi Tienda en Línea</strong><br>
+                        Av. Principal 1234<br>
+                        Ciudad, CP 12345<br>
+                        <abbr title="Teléfono">Tel:</abbr> (123) 456-7890<br>
+                        <a href="mailto:info@mitienda.com">info@mitienda.com</a>
+                    </address>
+                </div>
+
+                <!-- Columna centro: Enlaces útiles -->
+                <div class="col-md-4 text-center">
+                    <h5>Enlaces Útiles</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Métodos de Pago</a></li>
+                        <li><a href="#">Envíos y Devoluciones</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna derecha: Redes sociales -->
+                <div class="col-md-4 text-right">
+                    <h5>Síguenos</h5>
+                    <div class="social-links">
+                        <a href="#" title="Facebook">📘 Facebook</a><br>
+                        <a href="#" title="Instagram">📷 Instagram</a><br>
+                        <a href="#" title="Twitter">🐦 Twitter</a><br>
+                        <a href="#" title="YouTube">📺 YouTube</a><br>
+                        <a href="#" title="LinkedIn">💼 LinkedIn</a>
+                    </div>
+                    <p class="mt-3">&copy; 2024 Mi Tienda en Línea. Todos los derechos reservados.</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery desde CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+    
+    <!-- Popper.js desde CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    
+    <!-- Bootstrap JS desde CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
