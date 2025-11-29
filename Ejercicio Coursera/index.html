@@ -6,15 +6,90 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mi Tienda en Línea - Bootstrap 4</title>
     
-    <!-- Bootstrap CSS desde CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     
-    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css">
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Jumbotron con título del proyecto -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="oi oi-star"></span> Mi Tienda Tech
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="oi oi-cart"></span> Carrito
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#bannerCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#bannerCarousel" data-slide-to="1"></li>
+            <li data-target="#bannerCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/banner1.jpg" class="d-block w-100" alt="Banner 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>¡Mega Descuentos!</h2>
+                    <p>Hasta 50% OFF en productos seleccionados</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/banner2.jpg" class="d-block w-100" alt="Banner 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Tecnología de Última Generación</h2>
+                    <p>Los mejores productos del mercado</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/banner3.jpg" class="d-block w-100" alt="Banner 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Envío Gratis</h2>
+                    <p>En compras mayores a $100</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#bannerCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#bannerCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+
+    <div class="container mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Inicio</li>
+            </ol>
+        </nav>
+    </div>
+
     <div class="jumbotron jumbotron-fluid text-center">
         <div class="container">
             <h1 class="display-3">Mi Tienda en Línea</h1>
@@ -22,10 +97,8 @@
         </div>
     </div>
 
-    <!-- Container principal -->
     <div class="container">
         
-        <!-- Sección de características del producto con 3 párrafos -->
         <section class="feature-section">
             <div class="row">
                 <div class="col-md-4">
@@ -45,65 +118,93 @@
 
         <hr>
 
-        <!-- Lista de productos usando sistema de grillas con FLEX -->
         <section class="products-section my-5">
             <h2 class="text-center mb-4">Nuestros Productos Destacados</h2>
             
-            <!-- Sistema de grillas con FLEX -->
             <div class="container">
                 <div class="row d-flex">
                     
-                    <!-- Producto 1 -->
                     <div class="col-12 col-md-6 col-lg-4 d-flex">
-                        <div class="product-card flex-fill">
-                            <h3>Laptop Profesional</h3>
-                            <p>Laptop de última generación con procesador Intel i7, 16GB RAM y 512GB SSD. Perfecta para trabajo profesional y diseño gráfico. Incluye Windows 11 Pro y garantía extendida de 2 años.</p>
-                            <button class="btn btn-primary">Comprar Ahora</button>
+                        <div class="card product-card flex-fill">
+                            <img src="img/laptop.jpg" class="card-img-top" alt="Laptop">
+                            <div class="card-body">
+                                <h5 class="card-title">Laptop Profesional</h5>
+                                <p class="card-text">Laptop de última generación con procesador Intel i7, 16GB RAM y 512GB SSD. Perfecta para trabajo profesional y diseño gráfico.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">$1,299.99</small>
+                                <button class="btn btn-primary btn-block mt-2">Comprar Ahora</button>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Producto 2 -->
                     <div class="col-12 col-md-6 col-lg-4 d-flex">
-                        <div class="product-card flex-fill">
-                            <h3>Smartphone Premium</h3>
-                            <p>Teléfono inteligente con cámara de 108MP, pantalla AMOLED de 6.7", 256GB de almacenamiento y batería de 5000mAh. Resistente al agua IP68 y carga rápida de 65W.</p>
-                            <button class="btn btn-success">Comprar Ahora</button>
+                        <div class="card product-card flex-fill">
+                            <img src="img/smartphone.jpg" class="card-img-top" alt="Smartphone">
+                            <div class="card-body">
+                                <h5 class="card-title">Smartphone Premium</h5>
+                                <p class="card-text">Teléfono inteligente con cámara de 108MP, pantalla AMOLED de 6.7", 256GB de almacenamiento y batería de 5000mAh.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">$899.99</small>
+                                <button class="btn btn-success btn-block mt-2">Comprar Ahora</button>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Producto 3 -->
                     <div class="col-12 col-md-6 col-lg-4 d-flex">
-                        <div class="product-card flex-fill">
-                            <h3>Auriculares Inalámbricos</h3>
-                            <p>Auriculares con cancelación activa de ruido, sonido Hi-Fi, 30 horas de batería y estuche de carga portátil. Compatibles con todos los dispositivos Bluetooth 5.0.</p>
-                            <button class="btn btn-info">Comprar Ahora</button>
+                        <div class="card product-card flex-fill">
+                            <img src="img/auriculares.jpg" class="card-img-top" alt="Auriculares">
+                            <div class="card-body">
+                                <h5 class="card-title">Auriculares Inalámbricos</h5>
+                                <p class="card-text">Auriculares con cancelación activa de ruido, sonido Hi-Fi, 30 horas de batería y estuche de carga portátil.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">$249.99</small>
+                                <button class="btn btn-info btn-block mt-2">Comprar Ahora</button>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Producto 4 -->
                     <div class="col-12 col-md-6 col-lg-4 d-flex">
-                        <div class="product-card flex-fill">
-                            <h3>Tablet Multifuncional</h3>
-                            <p>Tablet de 10.5 pulgadas con pantalla 2K, 8GB RAM y soporte para stylus. Ideal para estudiantes y profesionales creativos. Incluye teclado desmontable y funda protectora.</p>
-                            <button class="btn btn-warning">Comprar Ahora</button>
+                        <div class="card product-card flex-fill">
+                            <img src="img/tablet.jpg" class="card-img-top" alt="Tablet">
+                            <div class="card-body">
+                                <h5 class="card-title">Tablet Multifuncional</h5>
+                                <p class="card-text">Tablet de 10.5 pulgadas con pantalla 2K, 8GB RAM y soporte para stylus. Ideal para estudiantes y profesionales.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">$599.99</small>
+                                <button class="btn btn-warning btn-block mt-2">Comprar Ahora</button>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Producto 5 -->
                     <div class="col-12 col-md-6 col-lg-4 d-flex">
-                        <div class="product-card flex-fill">
-                            <h3>Smartwatch Deportivo</h3>
-                            <p>Reloj inteligente con monitor de frecuencia cardíaca, GPS integrado, resistente al agua 50m y más de 100 modos deportivos. Batería de hasta 14 días de duración.</p>
-                            <button class="btn btn-danger">Comprar Ahora</button>
+                        <div class="card product-card flex-fill">
+                            <img src="img/smartwatch.jpg" class="card-img-top" alt="Smartwatch">
+                            <div class="card-body">
+                                <h5 class="card-title">Smartwatch Deportivo</h5>
+                                <p class="card-text">Reloj inteligente con monitor de frecuencia cardíaca, GPS integrado, resistente al agua 50m y más de 100 modos deportivos.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">$349.99</small>
+                                <button class="btn btn-danger btn-block mt-2">Comprar Ahora</button>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Producto 6 -->
                     <div class="col-12 col-md-6 col-lg-4 d-flex">
-                        <div class="product-card flex-fill">
-                            <h3>Cámara Digital 4K</h3>
-                            <p>Cámara profesional con sensor de 24MP, grabación 4K a 60fps, estabilización de imagen y lente intercambiable. Perfecta para fotografía y videografía profesional.</p>
-                            <button class="btn btn-dark">Comprar Ahora</button>
+                        <div class="card product-card flex-fill">
+                            <img src="img/camara.jpg" class="card-img-top" alt="Cámara">
+                            <div class="card-body">
+                                <h5 class="card-title">Cámara Digital 4K</h5>
+                                <p class="card-text">Cámara profesional con sensor de 24MP, grabación 4K a 60fps, estabilización de imagen y lente intercambiable.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">$1,799.99</small>
+                                <button class="btn btn-dark btn-block mt-2">Comprar Ahora</button>
+                            </div>
                         </div>
                     </div>
 
@@ -111,18 +212,142 @@
             </div>
         </section>
 
+        <section class="my-5">
+            <h2 class="text-center mb-4">Comparativa de Productos</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Producto</th>
+                            <th><span class="oi oi-monitor"></span> Pantalla</th>
+                            <th><span class="oi oi-battery-full"></span> Batería</th>
+                            <th><span class="oi oi-star"></span> Calificación</th>
+                            <th><span class="oi oi-tag"></span> Precio</th>
+                            <th><span class="oi oi-check"></span> Stock</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Laptop Profesional</td>
+                            <td>15.6" Full HD</td>
+                            <td>10 horas</td>
+                            <td><span class="oi oi-star text-warning"></span> 4.8/5</td>
+                            <td>$1,299.99</td>
+                            <td><span class="oi oi-check text-success"></span> Disponible</td>
+                        </tr>
+                        <tr>
+                            <td>Smartphone Premium</td>
+                            <td>6.7" AMOLED</td>
+                            <td>5000 mAh</td>
+                            <td><span class="oi oi-star text-warning"></span> 4.9/5</td>
+                            <td>$899.99</td>
+                            <td><span class="oi oi-check text-success"></span> Disponible</td>
+                        </tr>
+                        <tr>
+                            <td>Auriculares Inalámbricos</td>
+                            <td>N/A</td>
+                            <td>30 horas</td>
+                            <td><span class="oi oi-star text-warning"></span> 4.7/5</td>
+                            <td>$249.99</td>
+                            <td><span class="oi oi-x text-danger"></span> Agotado</td>
+                        </tr>
+                        <tr>
+                            <td>Tablet Multifuncional</td>
+                            <td>10.5" 2K</td>
+                            <td>12 horas</td>
+                            <td><span class="oi oi-star text-warning"></span> 4.6/5</td>
+                            <td>$599.99</td>
+                            <td><span class="oi oi-check text-success"></span> Disponible</td>
+                        </tr>
+                        <tr>
+                            <td>Smartwatch Deportivo</td>
+                            <td>1.4" OLED</td>
+                            <td>14 días</td>
+                            <td><span class="oi oi-star text-warning"></span> 4.8/5</td>
+                            <td>$349.99</td>
+                            <td><span class="oi oi-check text-success"></span> Disponible</td>
+                        </tr>
+                        <tr>
+                            <td>Cámara Digital 4K</td>
+                            <td>3.2" LCD</td>
+                            <td>8 horas</td>
+                            <td><span class="oi oi-star text-warning"></span> 5.0/5</td>
+                            <td>$1,799.99</td>
+                            <td><span class="oi oi-check text-success"></span> Disponible</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="my-5">
+            <h2 class="text-center mb-4">Contáctanos</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form>
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="asunto">Asunto</label>
+                            <select class="form-control" id="asunto" required>
+                                <option value="">Selecciona un asunto...</option>
+                                <option value="consulta">Consulta sobre productos</option>
+                                <option value="soporte">Soporte técnico</option>
+                                <option value="reclamo">Reclamo</option>
+                                <option value="sugerencia">Sugerencia</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefono">Teléfono (Opcional)</label>
+                            <input type="tel" class="form-control" id="telefono" placeholder="+1 234 567 8900">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        </div>
+                        
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="newsletter">
+                            <label class="form-check-label" for="newsletter">
+                                Deseo recibir información sobre ofertas y novedades
+                            </label>
+                        </div>
+                        
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="terminos" required>
+                            <label class="form-check-label" for="terminos">
+                                Acepto los términos y condiciones *
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span class="oi oi-envelope-closed"></span> Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
     </div>
 
-    <!-- Footer con información del comercio -->
     <footer>
         <div class="container">
             <div class="row">
                 
-                <!-- Columna izquierda: Información del comercio -->
                 <div class="col-md-4 text-left">
                     <h5>Sobre Nosotros</h5>
                     <p>Somos una tienda en línea dedicada a ofrecer los mejores productos de tecnología con la mejor calidad y servicio al cliente.</p>
-                    <!-- Dirección usando componente address -->
                     <address>
                         <strong>Mi Tienda en Línea</strong><br>
                         Av. Principal 1234<br>
@@ -132,7 +357,6 @@
                     </address>
                 </div>
 
-                <!-- Columna centro: Enlaces útiles -->
                 <div class="col-md-4 text-center">
                     <h5>Enlaces Útiles</h5>
                     <ul class="list-unstyled">
@@ -144,7 +368,6 @@
                     </ul>
                 </div>
 
-                <!-- Columna derecha: Redes sociales -->
                 <div class="col-md-4 text-right">
                     <h5>Síguenos</h5>
                     <div class="social-links">
@@ -161,13 +384,10 @@
         </div>
     </footer>
 
-    <!-- jQuery desde CDN -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
     
-    <!-- Popper.js desde CDN -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     
-    <!-- Bootstrap JS desde CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
 
 </body>
