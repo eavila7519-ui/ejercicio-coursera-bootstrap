@@ -94,6 +94,9 @@
         <div class="container">
             <h1 class="display-3">Mi Tienda en Línea</h1>
             <p class="lead">Descubre los mejores productos con la mejor calidad y precio</p>
+            <button type="button" class="btn btn-warning btn-lg mt-3" data-toggle="modal" data-target="#registroModal">
+                <span class="oi oi-person"></span> ¡Regístrate Ahora!
+            </button>
         </div>
     </div>
 
@@ -116,6 +119,176 @@
             </div>
         </section>
 
+        <section class="my-5">
+            <h2 class="text-center mb-4">Información de Compra</h2>
+            
+            <ul class="nav nav-pills justify-content-center mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-envio-tab" data-toggle="pill" href="#pills-envio" role="tab">Envío</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-pago-tab" data-toggle="pill" href="#pills-pago" role="tab">Métodos de Pago</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-garantia-tab" data-toggle="pill" href="#pills-garantia" role="tab">Garantía</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-envio" role="tabpanel">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5><span class="oi oi-globe"></span> Opciones de Envío</h5>
+                            <p>Ofrecemos envío a todo el país. Envío estándar gratis en compras mayores a $100. Envío express disponible en 24-48 horas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-pago" role="tabpanel">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5><span class="oi oi-credit-card"></span> Formas de Pago</h5>
+                            <p>Aceptamos todas las tarjetas de crédito y débito, PayPal, transferencias bancarias y pagos en efectivo contra entrega.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-garantia" role="tabpanel">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5><span class="oi oi-shield"></span> Garantía</h5>
+                            <p>Todos nuestros productos cuentan con garantía de fabricante. Además, ofrecemos 30 días de devolución sin preguntas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-5">
+            <h2 class="text-center mb-4">Más Información</h2>
+            
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary btn-block" type="button" data-toggle="collapse" data-target="#collapseEspecificaciones">
+                        Ver Especificaciones Técnicas <span class="oi oi-chevron-bottom"></span>
+                    </button>
+                    <div class="collapse mt-2" id="collapseEspecificaciones">
+                        <div class="card card-body">
+                            <h6>Especificaciones Generales</h6>
+                            <ul>
+                                <li>Garantía extendida disponible</li>
+                                <li>Soporte técnico 24/7</li>
+                                <li>Actualizaciones gratuitas</li>
+                                <li>Manuales en español</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-success btn-block" type="button" data-toggle="collapse" data-target="#collapsePromocion">
+                        Ver Promociones Actuales <span class="oi oi-tag"></span>
+                    </button>
+                    <div class="collapse mt-2" id="collapsePromocion">
+                        <div class="card card-body">
+                            <h6>Promociones del Mes</h6>
+                            <ul>
+                                <li>15% OFF en segunda compra</li>
+                                <li>Envío gratis en tu primera compra</li>
+                                <li>2x1 en accesorios seleccionados</li>
+                                <li>Cuotas sin interés con tarjetas participantes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="btn btn-info btn-block mt-3" type="button" data-toggle="collapse" data-target=".multi-collapse">
+                Ver Toda la Información <span class="oi oi-menu"></span>
+            </button>
+            <div class="row mt-2">
+                <div class="col-md-6">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card card-body">
+                            <strong>Cobertura Nacional</strong>
+                            <p>Entregamos en todas las ciudades del país con seguimiento en tiempo real.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                        <div class="card card-body">
+                            <strong>Atención al Cliente</strong>
+                            <p>Equipo disponible 24/7 para resolver todas tus dudas y consultas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-5">
+            <h2 class="text-center mb-4">Preguntas Frecuentes</h2>
+            
+            <div class="accordion" id="accordionFAQ">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne">
+                                <span class="oi oi-question-mark"></span> ¿Cuáles son las formas de pago disponibles?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse show" data-parent="#accordionFAQ">
+                        <div class="card-body">
+                            Aceptamos tarjetas de crédito (Visa, Mastercard, American Express), tarjetas de débito, PayPal, transferencias bancarias y pago en efectivo contra entrega en algunas zonas.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo">
+                                <span class="oi oi-clock"></span> ¿Cuánto tarda el envío?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" data-parent="#accordionFAQ">
+                        <div class="card-body">
+                            El envío estándar tarda de 3 a 5 días hábiles. El envío express llega en 24-48 horas. Todos los envíos incluyen código de seguimiento.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree">
+                                <span class="oi oi-loop-circular"></span> ¿Puedo devolver un producto?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" data-parent="#accordionFAQ">
+                        <div class="card-body">
+                            Sí, tienes 30 días para devolver cualquier producto sin preguntas. El producto debe estar en su empaque original y sin usar. El reembolso se procesa en 5-7 días hábiles.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour">
+                                <span class="oi oi-shield"></span> ¿Los productos tienen garantía?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" data-parent="#accordionFAQ">
+                        <div class="card-body">
+                            Todos nuestros productos incluyen garantía de fabricante. Dependiendo del producto, la garantía puede ser de 1 a 3 años. También ofrecemos garantía extendida opcional.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <hr>
 
         <section class="products-section my-5">
@@ -128,7 +301,7 @@
                         <div class="card product-card flex-fill">
                             <img src="img/laptop.jpg" class="card-img-top" alt="Laptop">
                             <div class="card-body">
-                                <h5 class="card-title">Laptop Profesional</h5>
+                                <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Ideal para trabajo profesional y gaming">Laptop Profesional <span class="oi oi-info"></span></h5>
                                 <p class="card-text">Laptop de última generación con procesador Intel i7, 16GB RAM y 512GB SSD. Perfecta para trabajo profesional y diseño gráfico.</p>
                             </div>
                             <div class="card-footer">
@@ -142,7 +315,7 @@
                         <div class="card product-card flex-fill">
                             <img src="img/smartphone.jpg" class="card-img-top" alt="Smartphone">
                             <div class="card-body">
-                                <h5 class="card-title">Smartphone Premium</h5>
+                                <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Cámara profesional de 108MP">Smartphone Premium <span class="oi oi-info"></span></h5>
                                 <p class="card-text">Teléfono inteligente con cámara de 108MP, pantalla AMOLED de 6.7", 256GB de almacenamiento y batería de 5000mAh.</p>
                             </div>
                             <div class="card-footer">
@@ -156,7 +329,7 @@
                         <div class="card product-card flex-fill">
                             <img src="img/auriculares.jpg" class="card-img-top" alt="Auriculares">
                             <div class="card-body">
-                                <h5 class="card-title">Auriculares Inalámbricos</h5>
+                                <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Cancelación activa de ruido">Auriculares Inalámbricos <span class="oi oi-info"></span></h5>
                                 <p class="card-text">Auriculares con cancelación activa de ruido, sonido Hi-Fi, 30 horas de batería y estuche de carga portátil.</p>
                             </div>
                             <div class="card-footer">
@@ -170,7 +343,7 @@
                         <div class="card product-card flex-fill">
                             <img src="img/tablet.jpg" class="card-img-top" alt="Tablet">
                             <div class="card-body">
-                                <h5 class="card-title">Tablet Multifuncional</h5>
+                                <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Incluye stylus y teclado">Tablet Multifuncional <span class="oi oi-info"></span></h5>
                                 <p class="card-text">Tablet de 10.5 pulgadas con pantalla 2K, 8GB RAM y soporte para stylus. Ideal para estudiantes y profesionales.</p>
                             </div>
                             <div class="card-footer">
@@ -184,7 +357,7 @@
                         <div class="card product-card flex-fill">
                             <img src="img/smartwatch.jpg" class="card-img-top" alt="Smartwatch">
                             <div class="card-body">
-                                <h5 class="card-title">Smartwatch Deportivo</h5>
+                                <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="GPS integrado y 100+ modos deportivos">Smartwatch Deportivo <span class="oi oi-info"></span></h5>
                                 <p class="card-text">Reloj inteligente con monitor de frecuencia cardíaca, GPS integrado, resistente al agua 50m y más de 100 modos deportivos.</p>
                             </div>
                             <div class="card-footer">
@@ -198,7 +371,7 @@
                         <div class="card product-card flex-fill">
                             <img src="img/camara.jpg" class="card-img-top" alt="Cámara">
                             <div class="card-body">
-                                <h5 class="card-title">Cámara Digital 4K</h5>
+                                <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Grabación 4K profesional">Cámara Digital 4K <span class="oi oi-info"></span></h5>
                                 <p class="card-text">Cámara profesional con sensor de 24MP, grabación 4K a 60fps, estabilización de imagen y lente intercambiable.</p>
                             </div>
                             <div class="card-footer">
@@ -384,11 +557,76 @@
         </div>
     </footer>
 
+    <div class="modal fade" id="registroModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title"><span class="oi oi-person"></span> Registro de Usuario</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Regístrate y obtén beneficios exclusivos:</p>
+                    <ul>
+                        <li>15% de descuento en tu primera compra</li>
+                        <li>Envío gratis en tu primer pedido</li>
+                        <li>Acceso a ofertas exclusivas</li>
+                    </ul>
+                    <form id="registroForm">
+                        <div class="form-group">
+                            <label for="modalNombre">Nombre Completo *</label>
+                            <input type="text" class="form-control" id="modalNombre" placeholder="Juan Pérez" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="modalEmail">Correo Electrónico *</label>
+                            <input type="email" class="form-control" id="modalEmail" placeholder="correo@ejemplo.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="modalPassword">Contraseña *</label>
+                            <input type="password" class="form-control" id="modalPassword" placeholder="Mínimo 8 caracteres" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="modalTelefono">Teléfono</label>
+                            <input type="tel" class="form-control" id="modalTelefono" placeholder="+504 1234-5678">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="modalNewsletterCheck" checked>
+                            <label class="form-check-label" for="modalNewsletterCheck">
+                                Quiero recibir ofertas y novedades por email
+                            </label>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="modalTerminos" required>
+                            <label class="form-check-label" for="modalTerminos">
+                                Acepto los términos y condiciones *
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="submit" form="registroForm" class="btn btn-primary">Registrarse</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
     
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+            
+            $('#bannerCarousel').carousel({
+                interval: 5000
+            });
+        });
+    </script>
 
 </body>
 </html>
